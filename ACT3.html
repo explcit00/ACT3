@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Label on Button Click</title>
+      
+        <script type="text/javascript">
+
+            function changeLabel() {
+                var inputText = document.getElementById("myInput").value;
+                document.getElementById("myLabel").innerHTML = "Name: " + inputText;
+            }
+        </script>
+        <style>
+            button{
+                background-color: skyblue;
+                border-radius: 15px;
+                border: 0px;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            input {
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <label id="myLabel">Name: EPHRAEM</label>
+        <br><br>
+        <input type="text" id="myInput">
+        <button onclick="changeLabel()">Submit</button>
+
+    </body>
+</html>
